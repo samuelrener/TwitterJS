@@ -18,6 +18,7 @@ routes.post("/User/Login", UserController.Login);
 
 routes.post("/Post/Insert", PostController.Insert);
 routes.post("/Post/Login", PostController.Like);
+routes.get("/Post/Find", PostController.Find);
 
 routes.get('/User/:key', UserController.ConfirmSignIn);
 module.exports = routes;

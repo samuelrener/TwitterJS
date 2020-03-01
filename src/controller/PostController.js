@@ -13,6 +13,11 @@ class PostController{
         return res.json(Post); 
 
     } 
-    
+    async Find(req, res){
+        const post = await Post.find().populate();
+      
+        return res.json(post); 
+
+    }
 }
 module.exports = new PostController();
